@@ -1,7 +1,8 @@
 #!/usr/bin/env python
-import sys
-import scapy.all as scapy
 import time
+
+import scapy.all as scapy
+
 
 def get_mac(ip):
     # scapy.arping(ip)
