@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 import sys
-
 import scapy.all as scapy
 import time
 
