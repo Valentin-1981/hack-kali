@@ -10,7 +10,7 @@ def get_url(packet):
 
 def get_login_info(packet):
     if packet.haslayer(scapy.Raw):
-        load = packet[scapy.Raw].load
+        load = packet[scapy.Raw].load ###
         keywords = ["username", "user", "login", "password", "pass", "pwd"]
         for keyword in keywords:
             if keyword in str(load):
